@@ -1,5 +1,5 @@
 {
-  "name": "tslint-defocus",
+  "name": "@ftr/tslint-defocus",
   "description": "tslint rule to warn about focussed test cases",
   "author": {
     "name": "Sergio Annecchiarico",
@@ -23,7 +23,7 @@
     "url": "https://github.com/Sergiioo/tslint-defocus/issues"
   },
   "license": "MIT",
-  "version": "2.0.3",
+  "version": "2.0.4-0",
   "dependencies": {
     "es6-shim": "^0.35.0",
     "typescript": "^2.4.1"
@@ -41,7 +41,7 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.1.0",
     "run-sequence": "^2.0.0"
-  }, 
+  },
   "peerDependencies": {
     "tslint": "^5.4.3"
   },
