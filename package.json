@@ -23,10 +23,9 @@
     "url": "https://github.com/Sergiioo/tslint-defocus/issues"
   },
   "license": "MIT",
-  "version": "0.0.0-20",
+  "version": "0.0.0-21",
   "dependencies": {
-    "es6-shim": "^0.35.0",
-    "typescript": "^2.4.1"
+    "es6-shim": "^0.35.0"
   },
   "devDependencies": {
     "@types/chai": "^4.0.1",
@@ -43,7 +42,8 @@
     "run-sequence": "^2.0.0"
   },
   "peerDependencies": {
-    "tslint": "^5.4.3"
+    "tslint": "^5.4.3",
+    "typescript": "^2.4.1"
   },
   "scripts": {
     "clean": "gulp clean",
