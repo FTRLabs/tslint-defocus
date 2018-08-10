@@ -23,7 +23,7 @@
     "url": "https://github.com/Sergiioo/tslint-defocus/issues"
   },
   "license": "MIT",
-  "version": "0.0.0-21",
+  "version": "0.0.0-22",
   "dependencies": {
     "es6-shim": "^0.35.0"
   },
