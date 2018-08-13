@@ -34,7 +34,7 @@ function walk(ctx: Lint.WalkContext<void>) {
     });
 }
 
-const bannedFunctions: ReadonlyArray<string> = ["fdescribe", "fit"];
+const bannedFunctions: ReadonlyArray<string> = ["fdescribe", "fit", "describe.only", "it.only"];
 
 const failureMessage = (functionName: string) => {
     return `Calls to '${functionName}' are not allowed.`;

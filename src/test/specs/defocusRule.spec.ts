@@ -31,6 +31,20 @@ describe(ruleName, function test() {
         expect(failures[0].getFailure()).eq('Calls to \'fit\' are not allowed.');
     });
 
+    it('should fail when "describe.only" is called', () => {
+        const sourceFile = getSourceFile('shouldFailWhenDescribeOnlyCalled.ts');
+        const failures = new Rule(ruleOptions).apply(sourceFile);
+        expect(failures).length(1);
+        expect(failures[0].getFailure()).eq('Calls to \'describe.only\' are not allowed.');
+    });
+
+    it('should fail when "it.only" is called', () => {
+        const sourceFile = getSourceFile('shouldFailWhenItOnlyCalled.ts');
+        const failures = new Rule(ruleOptions).apply(sourceFile);
+        expect(failures).length(1);
+        expect(failures[0].getFailure()).eq('Calls to \'it.only\' are not allowed.');
+    });
+
     it('should not fail for a snippet without "fit" or "fdescribe"', () => {
         const sourceFile = getSourceFile('shouldPassWithoutFitOrFDescribe.ts');
         const failures = new Rule(ruleOptions).apply(sourceFile);
@@ -51,6 +65,12 @@ describe(ruleName, function test() {
 
     it('should not flag a false alert if "fdescribe" or "fit" appear as function parameters', () => {
         const sourceFile = getSourceFile('allowsFDescribeFitAsFunctionParams.ts');
+        const failures = new Rule(ruleOptions).apply(sourceFile);
+        expect(failures).length(0);
+    });
+
+    it('should not flag a false alert if "describe.only" or "it.only" appear as properties', () => {
+        const sourceFile = getSourceFile('shouldPassWithOnlyProperty.ts');
         const failures = new Rule(ruleOptions).apply(sourceFile);
         expect(failures).length(0);
     });
