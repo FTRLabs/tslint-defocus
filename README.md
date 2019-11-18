@@ -1,3 +1,5 @@
+# Archived: please use TSLint's built-in [`ban`](https://palantir.github.io/tslint/rules/ban/) rule instead.
+
 [![Build Status](https://travis-ci.org/Sergiioo/tslint-defocus.svg?branch=master)](https://travis-ci.org/Sergiioo/tslint-defocus)
 [![NPM Version](https://img.shields.io/npm/v/tslint-defocus.svg)](https://www.npmjs.com/package/tslint-defocus)
 [![License](https://img.shields.io/npm/l/tslint-defocus.svg)](LICENSE)
